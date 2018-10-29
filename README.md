@@ -1,6 +1,6 @@
 # Bias in Data
-Name: Rohit Gupta
-Date: 28 October, 2018
+Name: Rohit Gupta  
+Date: 28 October, 2018  
 
 ## Goal
 The goal of the project is to investigate bias in Wikipedia (English) articles, through looking at the articles related to the politicians of each country. I am interested in two different metrics:
@@ -24,4 +24,68 @@ The top 10 countries at the extremes for both the metrics are found out, and the
 | Andorra                        | 80000      | 34         | 0.0425                 |
 | Federated States of Micronesia | 100000     | 38         | 0.038                  |  
 
+**Bottom 10 countries (Metric I):**    
 
+| Country      | Population | # Articles | # Articles / Pop (Pct) |
+|--------------|------------|------------|------------------------|
+| India        | 1371300000 | 986        | 0.000072               |
+| Indonesia    | 265200000  | 214        | 0.000081               |
+| China        | 1393800000 | 1135       | 0.000081               |
+| Uzbekistan   | 32900000   | 29         | 0.000088               |
+| Ethiopia     | 107500000  | 105        | 0.000098               |
+| Zambia       | 17700000   | 25         | 0.000141               |
+| Korea, North | 25600000   | 39         | 0.000152               |
+| Thailand     | 66200000   | 112        | 0.000169               |
+| Bangladesh   | 166400000  | 323        | 0.000194               |
+| Mozambique   | 30500000   | 60         | 0.000197               |
+
+
+**Top 10 countries (Metric II):** 
+
+| Country                  | Population | # Articles | # HQ Articles | HQ Articles / Articles |
+|--------------------------|------------|------------|---------------|------------------------|
+| Korea, North             | 25600000   | 39         | 7             | 17.948718              |
+| Saudi Arabia             | 33400000   | 119        | 16            | 13.445378              |
+| Central African Republic | 4700000    | 68         | 8             | 11.764706              |
+| Romania                  | 19500000   | 348        | 40            | 11.494253              |
+| Mauritania               | 4500000    | 52         | 5             | 9.615385               |
+| Bhutan                   | 800000     | 33         | 3             | 9.090909               |
+| Tuvalu                   | 10000      | 55         | 5             | 9.090909               |
+| Dominica                 | 70000      | 12         | 1             | 8.333333               |
+| United States            | 328000000  | 1092       | 82            | 7.509158               |
+| Benin                    | 11500000   | 94         | 7             | 7.446809               |
+
+**Bottom 10 countries (Metric II):**   
+  
+The bottom 10 countries all have 0 high quality articles, and there are 39 countries in total with 0 HQ articles. These are:  
+  
+Andorra, Angola, Antigua and Barbuda, Bahamas, Barbados, Belgium, Belize, Cameroon, Cape Verde, Comoros, Costa Rica, Djibouti, Federated States of Micronesia, Finland, Guyana, Kazakhstan, Kiribati, Lesotho, Liechtenstein, Macedonia, Malta, Marshall Islands, Moldova, Monaco, Mozambique, Nauru, Nepal, San Marino, Sao Tome and Principe, Seychelles, Slovakia, Solomon Islands, Switzerland, Tunisia, Turkmenistan, Uganda, Zambia  
+
+## Data Sources
+To complete the analysis, the following data sources were used:
+
+### Population Data
+The population data used for the analysis comes from [here](https://www.dropbox.com/s/5u7sy1xt7g0oi2c/WPDS_2018_data.csv?dl=0).
+Columns in the population data include:
+* Geography: Country name
+* Population mid-2018 (millions): population size (in millions)  
+
+The licensing information cannot be obtained, it is saved as a csv file on Dropbox.
+
+### Wikipedia page data
+The data with information about politician articles for different countries can be found at the following link (Figshare):
+https://figshare.com/articles/Untitled_Item/5513449
+
+The above link contains the following documentation:  
+> This project contains data on most English-language Wikipedia articles within the category "Category:Politicians by nationality" and subcategories, along with the code used to generate that data. Both are released under the CC-BY-SA 4.0 license.  
+
+> Data
+> The data was extracted via the Wikimedia API using the associated code. It is formatted as a CSV and saved as page_data.csv in the "data" directory. Columns are:
+
+> 1. "country", containing the sanitised country name, extracted from the category name;
+> 2. "page", containing the unsanitised page title.
+> 3. "last_edit", containing the edit ID of the last edit to the page.
+
+> Country codes are inconsistent. Where possible, they have been modified to match the country names found in http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14 - but the PRB dataset contains nations not found in Wikipedia, and vice versa.
+
+> The actual recursion only went 2 levels deep into the category tree: someone listed as an Antiguan politician, say, is included - someone exclusively listed as an Antiguan politician who was assassinated is not.

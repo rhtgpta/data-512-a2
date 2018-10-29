@@ -70,7 +70,7 @@ Columns in the population data include:
 * Geography: Country name
 * Population mid-2018 (millions): population size (in millions)  
 
-The licensing information cannot be obtained, it is saved as a csv file on Dropbox.
+The licensing information cannot be obtained as it is saved as a csv file on Dropbox.
 
 ### Wikipedia page data
 The data with information about politician articles for different countries can be found at the following link (Figshare):
@@ -89,3 +89,41 @@ The above link contains the following documentation:
 > Country codes are inconsistent. Where possible, they have been modified to match the country names found in http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14 - but the PRB dataset contains nations not found in Wikipedia, and vice versa.
 
 > The actual recursion only went 2 levels deep into the category tree: someone listed as an Antiguan politician, say, is included - someone exclusively listed as an Antiguan politician who was assassinated is not.
+
+As stated in the documentation above, the data is released under the [CC-BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/).  
+
+### Page Ratings (Wikipedia ORES)
+The ratings for the different articles are fetched from the ORES API provided by Wikimedia.  
+Here are a couple links that can be useful for knowing more about ORES:  
+https://www.mediawiki.org/wiki/ORES  
+https://ores.wikimedia.org  
+  
+ORES API Documentation:   
+https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context  
+As per ORES documentation under article quality, the categories are defined as follows (ordered from best to worst):
+
+    FA - Featured article
+    GA - Good article
+    B - B-class article
+    C - C-class article
+    Start - Start-class article
+    Stub - Stub-class article
+
+Articles are tagged as High Quality if the category falls under FA or GA.
+Wikimedia content is hosted under the [Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license](https://creativecommons.org/licenses/by-sa/3.0/).  
+
+## Resources
+The analysis is compiled using iPython Jupyter notebook, running Python 3.4.  
+Documentation for Python: https://docs.python.org/3.4/  
+Documentation for Jupyter Notebooks: http://jupyter-notebook.readthedocs.io/en/latest/   
+
+The packages that were imported during the courses are as follows:
+* Pandas [Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+* Numpy [Documentation](https://docs.scipy.org/doc/)
+* Requests [Documentation](http://docs.python-requests.org/en/master/)
+
+## Files Created
+The raw data files that were required for the analysis (apart from the ORES API data) are saved under the raw_data directory. The final dataset before the analysis is also saved in the main directory under the filename final_dataframe.csv  
+
+## License
+The assignment code is released under the MIT License. The details can be found in the License file.

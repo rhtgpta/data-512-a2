@@ -120,7 +120,7 @@ The analysis is compiled using iPython Jupyter notebook, running Python 3.4.
 Documentation for Python: https://docs.python.org/3.4/  
 Documentation for Jupyter Notebooks: http://jupyter-notebook.readthedocs.io/en/latest/   
 
-If you are new to python notebooks, the process can be greatly simplified by installing [Anaconda](https://www.anaconda.com/download/)
+If you are new to python notebooks, the process can be greatly simplified by installing [Anaconda](https://www.anaconda.com/download/).
 
 The packages that were imported during the courses are as follows:
 * Pandas [Documentation](https://pandas.pydata.org/pandas-docs/stable/)

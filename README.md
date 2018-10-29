@@ -7,6 +7,9 @@ The goal of the project is to investigate bias in Wikipedia (English) articles, 
 * Metric I : How many politician articles for a country relative to its population?
 * Metric II: How many of the those articles are high-quality for a country? 
 
+The original assignment statement can be found at the following location:  
+https://wiki.communitydata.cc/Human_Centered_Data_Science_(Fall_2018)/Assignments#A2:_Bias_in_data
+
 The top 10 countries at the extremes for both the metrics are found out, and the results are displayed below. 
 
 **Top 10 countries (Metric I):**    
@@ -94,9 +97,8 @@ As stated in the documentation above, the data is released under the [CC-BY-SA 4
 
 ### Page Ratings (Wikipedia ORES)
 The ratings for the different articles are fetched from the ORES API provided by Wikimedia.  
-Here are a couple links that can be useful for knowing more about ORES:  
+More info can be gleaned at the following link:  
 https://www.mediawiki.org/wiki/ORES  
-https://ores.wikimedia.org  
   
 ORES API Documentation:   
 https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context  
@@ -124,6 +126,20 @@ The packages that were imported during the courses are as follows:
 
 ## Files Created
 The raw data files that were required for the analysis (apart from the ORES API data) are saved under the raw_data directory. The final dataset before the analysis is also saved in the main directory under the filename final_dataframe.csv  
+
+Snapshot of the final dataframe:  
+
+| country | article_name                       | revision_id | article_quality | population |
+|---------|------------------------------------|-------------|-----------------|------------|
+| Zambia  | Template:ZambiaProvincialMinisters | 235107991   | NaN             | 17700000   |
+| Zambia  | Gladys Lundwe                      | 757566606   | Stub            | 17700000   |
+| Zambia  | Mwamba Luchembe                    | 764848643   | Stub            | 17700000   |
+| Zambia  | Thandiwe Banda                     | 768166426   | Start           | 17700000   |
+| Zambia  | Sylvester Chisembele               | 776082926   | C               | 17700000   |
+
+Data considerations:
+* Data for 105 Revision IDs couldn't be obtained from the ORES API, which is ~0.22% of the total data.
+* ~4.5% of the data didn't match due to missing country information in the population dataset. The countries that are missing can be found in the notebook file.
 
 ## License
 The assignment code is released under the MIT License. The details can be found in the License file.

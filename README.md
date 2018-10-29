@@ -120,10 +120,14 @@ The analysis is compiled using iPython Jupyter notebook, running Python 3.4.
 Documentation for Python: https://docs.python.org/3.4/  
 Documentation for Jupyter Notebooks: http://jupyter-notebook.readthedocs.io/en/latest/   
 
+If you are new to python notebooks, the process can be greatly simplified by installing [Anaconda](https://www.anaconda.com/download/)
+
 The packages that were imported during the courses are as follows:
 * Pandas [Documentation](https://pandas.pydata.org/pandas-docs/stable/)
 * Numpy [Documentation](https://docs.scipy.org/doc/)
 * Requests [Documentation](http://docs.python-requests.org/en/master/)
+
+The packages can be installed through anaconda or [pip](https://pip.pypa.io/en/stable/).
 
 ## Files Created
 The raw data files that were required for the analysis (apart from the ORES API data) are saved under the raw_data directory. The final dataset before the analysis is also saved in the main directory under the filename final_dataframe.csv  

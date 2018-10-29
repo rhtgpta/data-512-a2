@@ -1,7 +1,7 @@
 # Bias in Data
 Name: Rohit Gupta  
 Date: 28 October, 2018  
-Email: rohitgupta91 [at] uw.edu  
+Email: rgupta91 [at] uw.edu  
 
 ## Goal
 The goal of the project is to investigate bias in Wikipedia (English) articles, through looking at the articles related to the politicians of each country. I am interested in two different metrics:

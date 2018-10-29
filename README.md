@@ -9,7 +9,8 @@ The goal of the project is to investigate bias in Wikipedia (English) articles, 
 
 The top 10 countries at the extremes for both the metrics are found out, and the results are displayed below. 
 
-**Top 10 countries (Metric I):**
+**Top 10 countries (Metric I):**    
+
 | Country                        | Population | # Articles | # Articles / Pop (Pct) |
 |--------------------------------|------------|------------|------------------------|
 | Tuvalu                         | 10000      | 55         | 0.55                   |
@@ -21,6 +22,6 @@ The top 10 countries at the extremes for both the metrics are found out, and the
 | Marshall Islands               | 60000      | 37         | 0.061667               |
 | Iceland                        | 400000     | 206        | 0.0515                 |
 | Andorra                        | 80000      | 34         | 0.0425                 |
-| Federated States of Micronesia | 100000     | 38         | 0.038                  |
+| Federated States of Micronesia | 100000     | 38         | 0.038                  |  
 
 

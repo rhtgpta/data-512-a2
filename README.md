@@ -76,7 +76,7 @@ Columns in the population data include:
 
 The licensing information cannot be obtained as it is saved as a csv file on Dropbox.
 
-### Wikipedia page data
+### Wikipedia Page Data
 The data with information about politician articles for different countries can be found at the following link (Figshare):
 https://figshare.com/articles/Untitled_Item/5513449
 

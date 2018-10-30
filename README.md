@@ -4,9 +4,9 @@ Date: 28 October, 2018
 Email: rgupta91 [at] uw.edu  
 
 ## Goal
-The goal of the project is to investigate bias in Wikipedia (English) articles, through looking at the articles related to the politicians of each country. I am interested in two different metrics:
+The goal of the project is to investigate bias in Wikipedia (English) articles by looking at the articles related to the politicians of each country. I am interested in two different metrics:
 * Metric I : How many politician articles for a country relative to its population?
-* Metric II: How many of the those articles are high-quality for a country? 
+* Metric II: How many of those articles are high-quality for a country? 
 
 The original assignment statement can be found at the following location:  
 https://wiki.communitydata.cc/Human_Centered_Data_Science_(Fall_2018)/Assignments#A2:_Bias_in_data
@@ -61,7 +61,7 @@ The top 10 countries at the extremes for both the metrics are found out, and the
 
 **Bottom 10 countries (Metric II):**   
   
-The bottom 10 countries all have 0 high quality articles, and there are 39 countries in total with 0 HQ articles. These are:  
+The bottom 10 countries all have 0 high-quality articles, and there are 39 countries in total with 0 HQ articles. These are:  
   
 Andorra, Angola, Antigua and Barbuda, Bahamas, Barbados, Belgium, Belize, Cameroon, Cape Verde, Comoros, Costa Rica, Djibouti, Federated States of Micronesia, Finland, Guyana, Kazakhstan, Kiribati, Lesotho, Liechtenstein, Macedonia, Malta, Marshall Islands, Moldova, Monaco, Mozambique, Nauru, Nepal, San Marino, Sao Tome and Principe, Seychelles, Slovakia, Solomon Islands, Switzerland, Tunisia, Turkmenistan, Uganda, Zambia  
 
@@ -146,5 +146,15 @@ Data considerations:
 * Data for 105 Revision IDs couldn't be obtained from the ORES API, which is ~0.22% of the total data.
 * ~4.5% of the data didn't match due to missing country information in the population dataset. The countries that are missing can be found in the notebook file.
 
+## Reflection
+The analysis was a good exercise that helped me hone my skills for detecting potential sources of bias in a dataset. I have tried to list all the documentation and license information wherever possible and also informed about caveats (if any) to help with reproducibility.  
+
+The immense amount of variation in the number of politician articles per 100 people can be attributed to a lot of factors, but a common theme that stands out is that the countries with a lower population seem to score higher in the said metric, and vice-versa. That makes sense given the fact that the number of politicians required to hold important offices might not increase in a direct proportion with the population.
+  
+The metric indicating the proportion of high-quality articles is more interesting though. North Korea and Saudi Arabia share the 1st and 2nd spot respectively, which is quite interesting, to say the least. My initial hypothesis is that these countries have a political structure that is frequently a hot topic of discussion among political think-tanks resulting in a lot of editors, and hence a higher overall quality.  
+  
+Lastly, it would also be interesting to see the effect of language for each country, as we are only looking at the English Wikipedia articles. Countries with dominant non-English speaking populations would have a lower proportion of high-quality articles which can be a potential source of bias.    
+  
 ## License
 The assignment code is released under the MIT License. The details can be found in the License file.
+
